@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+  border-bottom: 1px solid rgba(112, 128, 144, 0.205);
+}
+
+header .logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+header .logo span {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+header .right .list-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header .right .list-menu a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+header .avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+main .head {
+  background-color: rgba(112, 128, 144, 0.07);
+  padding: 4rem 8rem;
+}
+
+main .head .meta-1 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main .head .author {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+main .head .author .avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+main .head .author .repo-tag {
+  font-size: larger;
+  color: rgb(135, 151, 167);
+  font-weight: 500;
+}
+
+main .head .like-card {
+  display: flex;
+  align-items: center;
+  font-size: smaller;
+}
+
+main .head .like-card .label {
+  padding: 1px 8px;
+  border: 1px solid rgba(112, 128, 144, 0.273);
+  border-radius: 7px 0 0 7px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+main .head .like-card .label .love {
+  fill: rgb(239, 71, 71);
+}
+
+main .head .like-card .count {
+  padding: 1px 8px;
+  border: 1px solid rgba(112, 128, 144, 0.273);
+  border-radius: 0 7px 7px 0;
+  display: flex;
+  align-items: center;
+}
+
+main .head .meta-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .head .meta-2 .tag {
+  font-size: smaller;
+  border: solid 1px rgba(112, 128, 144, 0.28);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 3px 5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+main .head .meta-2 .tag-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content {
+  display: flex;
+}
+
+main .content .desc {
+  width: 65%;
+  padding: 2rem 1rem 2rem 8rem;
+  border-right: 1px solid rgba(112, 128, 144, 0.218);
+  box-sizing: border-box;
+}
+
+main .content .playground {
+  box-sizing: border-box;
+  padding: 2rem 8rem 2rem 0;
+  flex: 1 1 0%;
+}
+
+.playground .download-metrik,
+.playground .inference {
+  border-bottom: 1px solid rgba(112, 128, 144, 0.28);
+  padding: 1rem 2rem;
+}
+
+.playground .download-metrik .count {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.playground .inference .head-inference {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.playground .inference select {
+  padding: 3px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(112, 128, 144, 0.291);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.playground .inference input {
+  width: 100%;
+  font-size: large;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(112, 128, 144, 0.291);
+  margin-bottom: 6px;
+}
+
+.playground .inference .btn-compute {
+  padding: 6px 32px;
+  border-radius: 5px;
+  border: 1px solid rgba(112, 128, 144, 0.291);
+  display: block;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.playground .inference .training-timer {
+  font-size: smaller;
+  color: slategray;
+  margin-bottom: 1rem;
+}
+
+.playground .inference .output-item {
+  margin-bottom: 1em;
+}
+
+.playground .inference .output-bar {
+  box-sizing: content-box;
+  width: 104%;
+  height: 35px;
+  /* background-color: aquamarine; */
+  border: 1px solid rgba(112, 128, 144, 0.282);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.playground .inference .output-bar .bar-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #ffd21e;
+  z-index: -1;
+}
